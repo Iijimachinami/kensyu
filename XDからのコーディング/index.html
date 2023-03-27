@@ -8,66 +8,81 @@
 <!-- ↓メディアクエリの宣言 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" media="all" href="style.css">
-	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" media="all" href="css/reset.css">
+	<link rel="stylesheet" media="all" href="css/style.css">
+	<!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Kiwi+Maru:wght@300&family=Lobster&family=Noto+Serif+JP:wght@200;300;400;600;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="">
 </head>
 <body>
-	<header>
-        <div class="head">
-            <h1 id="title">Cresta Design</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Concept</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Contact</a></li>
+	<header class="header">
+        <div class="header-inner">
+            <h1 id="site-ttl"><a href="">Cresta Design</a></h1>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Concept</a></li>
+                    <li class="nav-item"><a href="#">Service</a></li>
+                    <li class="nav-item"><a href="#">Works</a></li>
+                    <li class="nav-item"><a href="./contact/">Contact</a></li>
                 </ul>
             </nav>
+            <button class="burger-btn">
+                <span class="bar bar_top"></span>
+                <span class="bar bar_mid"></span>
+                <span class="bar bar_buttom"></span>
+            </button>
         </div>
             <p>Design for Smile.<br>
             <span>快適なオフィスをデザインする</span></p>
 	</header>
 	<main>
-        <section id="Concept" class="section-wapper">
+        <section id="concept" class="section-wrapper">
             <div class="head">
                 <h2 class="section-ttl">CONCEPT</h2>
-                <h3>“働きたくなる空間”をデザインすることで<br>
-                人々を幸せにする。</h3>
+                    <div class="section-inner">
+                    <p class="concrpt-lead">“働きたくなる空間”をデザインすることで<br>
+                    人々を幸せにする。</p>
+                </div>
             </div>
-            <div class="Concept">
-                <p>私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな思いの株式会社Cresta Designだからこそできる空間提供させていただきます。</p>
-                <div><img src="image/concept-image@2x.jpg" alt=""></div>
+            <div class="concept-content">
+                <p class="concept-text">私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな思いの株式会社Cresta Designだからこそできる空間提供させていただきます。</p>
+                <div class="concept-img-wrapper"><img src="image/concept-image@2x.jpg" alt=""></div>
             </div>
             <h3 class="back">Our Concept</h3>
         </section>
-        <section id="Works" class="section-wapper">
+        <section id="Works" class="section-wrapper">
             <h2 class="section-ttl">Works</h2>
-            <ul class="section-list-img">
-                <li class="works-item">
-                    <a href="#">
-                        <div class="works-list-img"><img src="./image/card-img01@2x.jpg" alt=""></div>
-                        <p class="works-list-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                    </a>
-                </li>
-                <li class="works-item">
-                    <a href="#">
-                        <div class="works-list-img"><img src="./image/card-img02@2x.jpg" alt=""></div>
-                        <p class="works-list-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしました。</p>
-                    </a>
-                </li>
-                <li class="works-item">
-                    <a href="#">
-                        <div class="works-list-img"><img src="./image/card-img03@2x.jpg" alt=""></div>
-                        <p class="works-list-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="section-inner">
+                <ul class="section-list-img">
+                    <li class="works-item">
+                        <a href="#">
+                            <div class="works-list-img"><img src="./image/card-img01@2x.jpg" alt=""></div>
+                            <p class="works-list-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="#">
+                            <div class="works-list-img"><img src="./image/card-img02@2x.jpg" alt=""></div>
+                            <p class="works-list-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしました。</p>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="#">
+                            <div class="works-list-img"><img src="./image/card-img03@2x.jpg" alt=""></div>
+                            <p class="works-list-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <a href="#" class="link-btn">View more</a>
             <h3 class="back">Our Works</h3>
         </section>
 <!-- Service -->
-        <section id="Service" class="section-wapper">
-            <h2 class="section-ttl">Service ――—</h2>
+        <section id="Service" class="section-wrapper">
+            <h2 class="section-ttl">Service</h2>
             <ul class="service-list">
                 <li class="service-item"><a href="">Hearing</a></li>
                 <li class="service-item"><a href="">Planning</a></li>
@@ -78,7 +93,7 @@
 <!-- //Service -->
 
 <!-- Contact -->
-        <section id="Contact" class="section-wapper">
+        <section id="Contact" class="section-wrapper">
             <h2 class="section-ttl">Contact</h2>
             <p class="section-text">お気軽にご相談ください。</p>
             <a href="./contact/" class="link-btn">Contact</div>
