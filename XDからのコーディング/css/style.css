@@ -9,10 +9,10 @@ body {
     font-size: 1.6rem;
     letter-spacing: .05em;
     color: #171717;
-    font-family: 'Noto Serif JP','Noto Serif', serif;
+    font-family: 'Noto Serif','Noto Serif JP', serif;
 }
 img {
-    width: 100px;
+    width: 100%;
     vertical-align: bottom;
 }
 
@@ -39,7 +39,7 @@ img {
 .section-inner {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 450px;
+    padding: 0 50px;
 }
 .back {
     max-width: 1200px;
@@ -73,6 +73,7 @@ header
     padding: 19px 30px;
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 1;
     box-sizing: border-box;
     width: 100%;
@@ -83,7 +84,6 @@ header
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: red;
 }
 .header a {
     color: #fff;
@@ -99,10 +99,10 @@ header
 .site-ttl {
     font-size: 2.6rem;
 }
-.nav-item {
+.nav-list {
     display: flex;
 }
-.nav-btn {
+.nav-item {
     margin-right: 30px;
 }
 .nav-item:last-of-type {
@@ -160,5 +160,9 @@ concept
     font-weight: bold;
 }
 .concept-img-wrapper {
-    max-width: ;
+    max-width: 440px;
+    margin-left: 20px;
 }
+/* ==========================
+works
+===========================  */
